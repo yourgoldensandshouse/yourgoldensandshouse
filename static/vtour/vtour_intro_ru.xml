@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<panorama>
+  <parameters>
+    ZoomMin=1
+    panoName=/static/vtour/panopokriv/panopokriv
+    layer_50 = /static/vtour/glassMeter.swf
+    layer_3 = /static/vtour/plugins/limits.swf
+    layer_4= /static/vtour/plugins/hotspots.swf
+    layer_8 = /static/vtour/plugins/autorotator.swf
+  </parameters>
+  <autorotator>
+    qualitymotion=medium
+    quality=medium
+  </autorotator>
+  <limits>
+  	tilt_min = -55
+  	tilt_max =  180
+  </limits>
+  <hotspots>
+    <global controller="lc_test" LocalConnectionID="lc_test"  onLoad="timer=1,1000,,hideme" hideme="buttunact;scene.staticY=-25,300,smooth;tumb1.staticY=-50,300,smooth;tumb3.staticY=-48,300,smooth;tumb5.staticY=-48,300,smooth;tumb7.staticY=-48,300,smooth;tumb9.staticY=-48,300,smooth;scene.onclick=showscene;"
+      hideintro="intro.visible=0"
+      hideplan="floorplan.visible=0,200;hideplan1" hideplan1="timer=1,190,,hideplan2" hideplan2="floorplan.visible=0"
+      buttact="tumb1.buttonmode=1;tumb3.buttonmode=1;tumb5.buttonmode=1;tumb7.buttonmode=1;tumb9.buttonmode=1;"
+      buttunact="tumb1.buttonmode=0;tumb3.buttonmode=0;tumb5.buttonmode=0;tumb7.buttonmode=0;tumb9.buttonmode=0;"
+      showinf="info.visible=1"
+      showplan="floorplan.visible=1; floorplan.alpha=1,200"
+      limitshigh="external.limits.tilt_min=-15"
+      limitslow="external.limits.tilt_min=-55"
+      closeinfo="info.visible=0">
+    <pano qualityMotion="medium" qualitystatic="best" sensitivity="83" threshold="0.001" leash="free" disableControls="1"  disableWheel="1"  />
+    <spot id="logosite" url="/static/vtour/transparent.png" static="1" staticX="480" staticY="-100" salign="LB" depth="84" onclick="openUrl(/ru/%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D1%82%D1%83%D1%80, _self)"/>
+    </global>
+  </hotspots>
+</panorama>
+

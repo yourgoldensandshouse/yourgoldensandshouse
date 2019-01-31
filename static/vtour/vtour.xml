@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<panorama>
+    <parameters>
+        ZoomMin=1
+        panoName=/admin/uploads/vtour/out2/out2
+   layer_50 = /admin/uploads/vtour/glassMeter.swf
+   layer_3 = /admin/uploads/vtour/plugins/limits.swf
+   layer_4= /admin/uploads/vtour/plugins/hotspots.swf
+   layer_5= /admin/uploads/vtour/plugins/1editor.swf
+   layer_25= /admin/uploads/vtour/plugins/tooltips.swf
+   layer_8 = /admin/uploads/vtour/plugins/autorotator.swf
+</parameters>
+<autorotator>
+qualitymotion=medium
+quality=medium
+</autorotator>  
+<limits> 
+	tilt_min = -55
+	tilt_max =  180 
+</limits> 
+<hotspots>
+      <global controller="lc_test" LocalConnectionID="lc_test"  onLoad="timer=1,1000,,hideme" hideme="buttunact;scene.staticY=-25,300,smooth;tumb1.staticY=-50,300,smooth;tumb3.staticY=-48,300,smooth;tumb5.staticY=-48,300,smooth;tumb7.staticY=-48,300,smooth;tumb9.staticY=-48,300,smooth;scene.onclick=showscene;"  
+
+hideintro="intro.visible=0"
+
+hideplan="floorplan.visible=0,200;hideplan1" hideplan1="timer=1,190,,hideplan2" hideplan2="floorplan.visible=0"
+
+buttact="tumb1.buttonmode=1;tumb3.buttonmode=1;tumb5.buttonmode=1;tumb7.buttonmode=1;tumb9.buttonmode=1;"
+
+buttunact="tumb1.buttonmode=0;tumb3.buttonmode=0;tumb5.buttonmode=0;tumb7.buttonmode=0;tumb9.buttonmode=0;"
+ showinf="info.visible=1"
+
+ showplan="floorplan.visible=1; floorplan.alpha=1,200" 
+
+ 
+ limitshigh="external.limits.tilt_min=-15"
+ 
+ limitslow="external.limits.tilt_min=-55"
+ 
+closeinfo="info.visible=0">
+       <pano qualityMotion="medium" qualitystatic="best" sensitivity="83" threshold="0.001" leash="free"   disableWheel="1"/>
+
+  <spot id="fs" url="/admin/uploads/vtour/fs.png" static="1" staticX="-24.00" staticY="22.00" salign="RT" depth="18" scale="0.70" glow="1" glowColor="#FFFFFF" blendMode="hardlight" onover="fs.glow=3; fs.glowColor=#ffffcc" onout="fs.glow=1; fs.glowColor=#FF3300" onclick="fullscreen()" />
+ 
+<spot id="ar1" url="/admin/uploads/vtour/arrow.png" static="1" staticX="-158.00" staticY="22.00" salign="RT" depth="18" scale="0.80" rotation="-90" glow="0" glowColor="#FFFFFF" blendMode="invert" onover="ar1.glow=1; ar1.glowColor=#ffffcc" onout="ar1.glow=0; ar1.glowColor=#FF3300" blockMouse="0"
+
+	onPress="pano.tiltKey=2,500"
+	onRelease="pano.tiltKey=0"/>
+
+<spot id="ar2" url="/admin/uploads/vtour/arrow.png" static="1" staticX="-126.00" staticY="22.00" salign="RT" depth="18" scale="0.80" rotation="90" glow="0" glowColor="#FFFFFF" blendMode="invert" onover="ar2.glow=1; ar2.glowColor=#ffffcc" onout="ar2.glow=0; ar2.glowColor=#FF3300" blockMouse="0"
+
+	onPress="pano.tiltKey=-2,500"
+	onRelease="pano.tiltKey=0"/>
+
+<spot id="ar3" url="/admin/uploads/vtour/arrow.png" static="1" staticX="-95.00" staticY="22.00" salign="RT" depth="18" scale="0.80" glow="0" glowColor="#FFFFFF" blendMode="invert" onover="ar3.glow=1; ar3.glowColor=#ffffcc" onout="ar3.glow=0; ar3.glowColor=#FF3300" blockMouse="0"
+
+	onPress="pano.panKey=2,500"
+	onRelease="pano.panKey=0"/>
+
+<spot id="ar4" url="/admin/uploads/vtour/arrow.png" static="1" staticX="-64.00" staticY="22.00" salign="RT" depth="18" scale="0.80" rotation="180" glow="0"  blendMode="invert" glowColor="#FFFFFF" onover="ar4.glow=1; ar4.glowColor=#ffffcc" onout="ar4.glow=0; ar4.glowColor=#FF3300" blockMouse="0" 
+
+	onPress="pano.panKey=-2,500"
+	onRelease="pano.panKey=0"/>
+
+//spot id="joylogo"  url="/admin/uploads/vtour/joy.png" visible="1" static="1" staticX="-9.50" salign="LT" alignX="-0.01" alignY="-0.05" depth="37" //
+<spot id="joylogo" url="/admin/uploads/vtour/joy.png" static="1" staticX="7.00" staticY="7.00" salign="LT" alignX="-0.01" alignY="-0.05" depth="37" scale="0.70" glow="1" glowColor="#FFFFFF" />
+
+<spot id="selector" url="/admin/uploads/vtour/selector.png" visible="0" static="1" staticX="-86.00" staticY="64.00" salign="RT" depth="7" scale="0.80" onover="selector.glow=1; selector.glowColor=#FF3300" onout="selector.glow=0; selector.glowColor=#FF3300" onclick="selector.visible=0; hideselector.visible=1; thumb1.visible=1; thumb2.visible=1; thumb3.visible=1; thumb4.visible=1; thumb5.visible=1; thumb6.visible=1;  thumb7.visible=1;  thumb8.visible=1;  thumb9.visible=1" />
+
+<spot id="hideselector" url="/admin/uploads/vtour/hideselector.png" visible="0" static="1" staticX="-86.00" staticY="64.00" salign="RT" depth="7" scale="0.80" onover="hideselector.glow=1; hideselector.glowColor=#FF3300" onout="hideselector.glow=0; hideselector.glowColor=#FF3300" onclick="selector.visible=1; hideselector.visible=0; thumb1.visible=0; thumb2.visible=0; thumb3.visible=0; thumb4.visible=0; thumb5.visible=0; thumb6.visible=0; thumb7.visible=0;  thumb8.visible=0;  thumb9.visible=0"/>
+
+<spot id="thumb1" url="/admin/uploads/vtour/tumb1.jpg" visible="0" alt="Krivoto Durvo v Morskata Gradina" static="1" staticX="-248.00" staticY="129.00" salign="RT" depth="9" alpha="0.7" glow="3" glowColor="#000033" onover="thumb1.alpha=1" onout="thumb1.alpha=0.7" onclick="loadpano(panoName=/admin/uploads/vtour/6a/durvo)"/>
+
+<spot id="thumb2" url="/admin/uploads/vtour/tumb3.jpg" visible="0" alt="Panteona" static="1" staticX="-151.00" staticY="129.00" salign="RT" depth="9" alpha="0.7" glow="3" glowColor="#000033" onover="thumb2.alpha=2" onout="thumb2.alpha=0.7" onclick="loadpano(panoName=/admin/uploads/vtour/3a/panteon)"/>
+
+<spot id="thumb3" url="/admin/uploads/vtour/tumb5.jpg" visible="0" alt="Planetariuma" static="1" staticX="-54.00" staticY="129.00" salign="RT" depth="9" alpha="0.7" glow="3" glowColor="#000033" onover="thumb3.alpha=1" onout="thumb3.alpha=0.7" onclick="loadpano(panoName=/admin/uploads/vtour/4/planetarium)" />
+
+<spot id="thumb4" url="/admin/uploads/vtour/tumb7.jpg" visible="0" alt="Akvariuma" static="1" staticX="-54.00" staticY="227.00" salign="RT" depth="9" alpha="0.7" glow="3" glowColor="#000033" onover="thumb4.alpha=1" onout="thumb4.alpha=0.7"  onclick="loadpano(panoName=/admin/uploads/vtour/2/akvariuma)"/>
+
+<spot id="thumb5" url="/admin/uploads/vtour/tumb9.jpg" visible="0" alt="Panorama ot Mestnostta Trakata" static="1" staticX="-151.00" staticY="227.00" salign="RT" depth="9" alpha="0.7" glow="3" glowColor="#000033" onover="thumb5.alpha=1" onout="thumb5.alpha=0.7" onclick="loadpano(panoName=/admin/uploads/vtour/1/a)" />
+
+<spot id="thumb6" url="/admin/uploads/vtour/tumb11.jpg" visible="0" alt="Mejdu Planetariuma i Akvariuma" static="1" staticX="-248.00" staticY="227.00" salign="RT" depth="9" alpha="0.7" glow="3" glowColor="#000033" onover="thumb6.alpha=1" onout="thumb6.alpha=0.7" onclick="loadpano(panoName=/admin/uploads/vtour/5/morska_mid)"/>
+
+<spot id="thumb7" url="/admin/uploads/vtour/tumb13.jpg" visible="0" static="1" alt="Hram Sv. Nikova" staticX="-151.00" staticY="324.00" salign="RT" depth="9" alpha="0.7" glow="3" glowColor="#000033" onover="thumb7.alpha=1" onout="thumb7.alpha=0.7" onclick="loadpano(panoName=/admin/uploads/vtour/7/Nikola)" />
+
+<spot id="thumb8" url="/admin/uploads/vtour/tumb15.jpg" visible="0" static="1" alt="Shishkovata Gradinka" staticX="-54.00" staticY="324.00" salign="RT" depth="9" alpha="0.7" glow="3" glowColor="#000033" onover="thumb8.alpha=1" onout="thumb8.alpha=0.7" onclick="loadpano(panoName=/admin/uploads/vtour/8/6i6kova)" />
+
+<spot id="thumb9" url="/admin/uploads/vtour/tumb17.jpg" visible="0" static="1" alt="Dvorez na Kulturata i Sporta" staticX="-248.00" staticY="324.00" salign="RT" depth="9" alpha="0.7" glow="3" glowColor="#000033" onover="thumb9.alpha=1" onout="thumb9.alpha=0.7" onclick="loadpano(panoName=/admin/uploads/vtour/9/sportna)" />
+
+//basein
+<spot id="st1" url="/admin/uploads/vtour/strelka.png" pan="126.32" tilt="-10.10" depth="19" scaleable="0" blendMode="invert" linked="/admin/uploads/vtour/basein/basein" onclick="loadpano(panoName=/admin/uploads/vtour/parking/parking)"/>
+
+<spot id="st2" url="/admin/uploads/vtour/strelka.png" pan="-146.59" tilt="-9.18" depth="20" scaleable="0" blendMode="invert" linked="/admin/uploads/vtour/basein/basein" onclick="loadpano(panoName=/admin/uploads/vtour/besedka/besedka)"/>
+
+<spot id="st3" url="/admin/uploads/vtour/strelka.png" pan="154.38" tilt="-11.24" depth="21" scaleable="0" blendMode="invert" linked="/admin/uploads/vtour/basein/basein" onclick="loadpano(panoName=/admin/uploads/vtour/koridor/koridor)"/>
+
+//parking
+<spot id="st4" url="/admin/uploads/vtour/strelka.png" pan="50" tilt="-7" depth="21" scaleable="0" blendMode="invert" linked="/admin/uploads/vtour/parking/parking" onclick="loadpano(panoName=/admin/uploads/vtour/basein/basein)"/>
+
+<box id="st5" url="/admin/uploads/vtour/strelka.png" pan="30" tilt="-7"  rotationX="37.00" rotationY="-46.00" rotationZ="-18.00" depth="21" scaleable="0" blendMode="invert" linked="/admin/uploads/vtour/parking/parking" onclick="loadpano(panoName=/admin/uploads/vtour/koridor/koridor)"/>
+
+//besedka
+<box id="st6" url="/admin/uploads/vtour/strelka.png" pan="60.00" tilt="-14.00" rotationX="41.00" rotationY="-65.00" rotationZ="-2.00" depth="21" scaleable="0" blendMode="invert" linked="/admin/uploads/vtour/besedka/besedka" onclick="loadpano(panoName=/admin/uploads/vtour/basein/basein)"/>
+
+<box id="st7" url="/admin/uploads/vtour/strelka.png" pan="91.00" tilt="-20.00" rotationX="-12.00" rotationY="-34.00" rotationZ="12.00" depth="21" scaleable="0" blendMode="invert" linked="/admin/uploads/vtour/besedka/besedka" onclick="loadpano(panoName=/admin/uploads/vtour/kuhnq/kuhnq)"/>
+
+
+//coridor
+<box id="st8" url="/admin/uploads/vtour/strelka.png" pan="41.00" tilt="-20.00" rotationX="-13.00" rotationY="5.00" rotationZ="-18.00" depth="21" scaleable="0" blendMode="invert"  linked="/admin/uploads/vtour/koridor/koridor" onclick="loadpano(panoName=/admin/uploads/vtour/spalnqdolu/spalnqdolu)"/>
+
+<box id="st9" url="/admin/uploads/vtour/strelka.png" pan="30.00" tilt="-21.00" rotationX="37.00" rotationY="-60.00" rotationZ="-18.00" depth="21" scaleable="0" blendMode="invert"  linked="/admin/uploads/vtour/koridor/koridor" onclick="loadpano(panoName=/admin/uploads/vtour/banqdolu/banqdolu)"/>
+
+<box id="st10" url="/admin/uploads/vtour/strelka.png" pan="85.00" tilt="-7.00" rotationX="37.00" rotationY="-46.00" rotationZ="-6.00" depth="21" scaleable="0" blendMode="invert"  linked="/admin/uploads/vtour/koridor/koridor" onclick="loadpano(panoName=/admin/uploads/vtour/koridorgore/pano)"/>
+
+<box id="st11" url="/admin/uploads/vtour/strelka.png" pan="128.00" tilt="-26.00" depth="21" scaleable="0" blendMode="invert"  linked="/admin/uploads/vtour/koridor/koridor" onclick="loadpano(panoName=/admin/uploads/vtour/hol/hol)"/>
+
+<box id="st12" url="/admin/uploads/vtour/strelka.png" pan="-130.00" tilt="-11.00" rotationZ="1.00" depth="21" scaleable="0" blendMode="invert"  linked="/admin/uploads/vtour/koridor/koridor" onclick="loadpano(panoName=/admin/uploads/vtour/basein/basein)"/>
+
+//hol
+<box id="st13" url="/admin/uploads/vtour/strelka.png" pan="-112.00" tilt="-12.00" rotationZ="1.00" depth="21" scaleable="0" blendMode="invert"   linked="/admin/uploads/vtour/hol/hol" onclick="loadpano(panoName=/admin/uploads/vtour/koridor/koridor)"/>
+
+<box id="st14" url="/admin/uploads/vtour/strelka.png" pan="-14.00" tilt="-18.00" rotationX="4.00" depth="21" scaleable="0" blendMode="invert"   linked="/admin/uploads/vtour/hol/hol" onclick="loadpano(panoName=/admin/uploads/vtour/kuhnq/kuhnq)"/>
+
+<box id="st15" url="/admin/uploads/vtour/strelka.png" pan="29.00" tilt="-19.00" rotationZ="1.00" depth="21" scaleable="0" blendMode="invert" linked="/admin/uploads/vtour/hol/hol" onclick="loadpano(panoName=/admin/uploads/vtour/besedka/besedka)"/>
+
+//kuhnq
+
+<box id="st16" url="/admin/uploads/vtour/strelka.png" pan="83.00" tilt="-11.00" depth="21" scaleable="0" blendMode="invert"  linked="/admin/uploads/vtour/kuhnq/kuhnq" onclick="loadpano(panoName=/admin/uploads/vtour/hol/hol)"/>
+
+<box id="st17" url="/admin/uploads/vtour/strelka.png" pan="29.00" tilt="-3.00" rotationZ="1.00" depth="21" scaleable="0" blendMode="invert"  linked="/admin/uploads/vtour/kuhnq/kuhnq" onclick="loadpano(panoName=/admin/uploads/vtour/besedka/besedka)"/>
+
+//banq dolu
+<box id="st18" url="/admin/uploads/vtour/strelka.png" pan="-79.00" tilt="-24.00" rotationZ="1.00" depth="21" scaleable="0" blendMode="invert"  linked="/admin/uploads/vtour/banqdolu/banqdolu" onclick="loadpano(panoName=/admin/uploads/vtour/koridor/koridor)"/>
+
+//spalnq dolu
+<box id="st19" url="/admin/uploads/vtour/strelka.png" pan="-70.00" tilt="-24.00" depth="21" scaleable="0" blendMode="invert"  linked="/admin/uploads/vtour/spalnqdolu/spalnqdolu" onclick="loadpano(panoName=/admin/uploads/vtour/koridor/koridor)"/>
+
+<box id="st20" url="/admin/uploads/vtour/strelka.png" pan="16.00" tilt="-24.00" rotationX="10.00" rotationY="-39.00" rotationZ="1.00" depth="21" scaleable="0" blendMode="invert"   linked="/admin/uploads/vtour/spalnqdolu/spalnqdolu" onclick="loadpano(panoName=/admin/uploads/vtour/banqdolu1a/banqdolu1a)"/>
+
+//banqdolu1a
+<box id="st21" url="/admin/uploads/vtour/strelka.png" pan="-51.00" tilt="-24.00" rotationX="19.00" rotationY="18.00" rotationZ="20.00" depth="21" scaleable="0" blendMode="invert"   linked="/admin/uploads/vtour/banqdolu1a/banqdolu1a" onclick="loadpano(panoName=/admin/uploads/vtour/spalnqdolu/spalnqdolu)"/>
+
+//koridorgore
+<box id="st22" url="/admin/uploads/vtour/strelka.png" pan="144.00" tilt="-34.00" depth="21" scaleable="0" blendMode="invert"  linked="/admin/uploads/vtour/koridorgore/pano" onclick="loadpano(panoName=/admin/uploads/vtour/koridor/koridor)"/>
+
+<box id="st23" url="/admin/uploads/vtour/strelka.png" pan="98.00" tilt="-26.00" rotationX="15.00" rotationY="31.00" rotationZ="30.00" depth="21" scaleable="0" blendMode="invert"   linked="/admin/uploads/vtour/koridorgore/pano" onclick="loadpano(panoName=/admin/uploads/vtour/spalnqgore2/koridorgore2)"/>
+
+<box id="st24" url="/admin/uploads/vtour/strelka.png" pan="-150.00" tilt="-19.00" depth="21" scaleable="0" blendMode="invert"   linked="/admin/uploads/vtour/koridorgore/pano" onclick="loadpano(panoName=/admin/uploads/vtour/banqgore/banqgore)"/>
+
+//banqgore
+<box id="st25" url="/admin/uploads/vtour/strelka.png" pan="-120.00" tilt="-21.00" rotationX="19.00" rotationY="-11.00" rotationZ="11.00" depth="21" scaleable="0" blendMode="invert"   linked="/admin/uploads/vtour/banqgore/banqgore" onclick="loadpano(panoName=/admin/uploads/vtour/koridorgore/pano)"/>
+
+<box id="st26" url="/admin/uploads/vtour/strelka.png" pan="-106.00" tilt="-33.00" rotationX="-25.00" rotationY="-13.00" rotationZ="84.00" depth="21" scaleable="0" blendMode="invert"   linked="/admin/uploads/vtour/banqgore/banqgore" onclick="loadpano(panoName=/admin/uploads/vtour/spalnqgore/koridorgore)"/>
+
+//spalnqgore
+<box id="st27" url="/admin/uploads/vtour/strelka.png" pan="-65.00" tilt="-11.00" depth="21" scaleable="0" blendMode="invert"  linked="/admin/uploads/vtour/spalnqgore/koridorgore" onclick="loadpano(panoName=/admin/uploads/vtour/koridorgore/pano)"/>
+
+//spalnqgore2
+<box id="st28" url="/admin/uploads/vtour/strelka.png" pan="-157.00" tilt="-20.00" rotationX="23.00" rotationY="-4.00" rotationZ="13.00" depth="21" scaleable="0" blendMode="invert" linked="/admin/uploads/vtour/spalnqgore2/koridorgore2" onclick="loadpano(panoName=/admin/uploads/vtour/koridorgore/pano)"/>
+
+//floorplan
+<spot id="1o" url="/admin/uploads/vtour/1o.png" static="1" staticX="24.00" staticY="27.00" salign="LT" depth="60" />
+
+<spot id="1w" url="/admin/uploads/vtour/1w.png" visible="0" static="1" staticX="24.00" staticY="27.00" salign="LT" depth="60" onover="1w.glow=6; 1w.glowColor=#FF3300" onout="1w.glow=0" onclick="1o.visible=1; 1w.visible=0;3w.visible=1;3o.visible=0; 2o.visible=0; 2w.visible=1; smallmap1.visible=1; smallmap3.visible=0; smallmap2.visible=0 " />
+
+<spot id="2o" url="/admin/uploads/vtour/2o.png"  visible="0" static="1" staticX="24.00" staticY="60.00" salign="LT" depth="60" />
+
+<spot id="2w" url="/admin/uploads/vtour/2w.png" static="1" staticX="24.00" staticY="60.00" salign="LT" depth="60" onover="2w.glow=6; 2w.glowColor=#FF3300" onout="2w.glow=0" onclick="1o.visible=0; 1w.visible=1; 2o.visible=1; 2w.visible=0;3w.visible=1;3o.visible=0; smallmap1.visible=0; smallmap3.visible=0; smallmap2.visible=1 " />
+
+<spot id="3o" url="/admin/uploads/vtour/3o.png"  visible="0" static="1" staticX="24.00" staticY="93.00" salign="LT" depth="60" />
+
+<spot id="3w" url="/admin/uploads/vtour/3w.png" static="1" staticX="24.00" staticY="93.00" salign="LT" depth="60" onover="3w.glow=6; 3w.glowColor=#FF3300" onout="3w.glow=0" onclick="1o.visible=0; 1w.visible=1; 2o.visible=0; 2w.visible=1; 3o.visible=1; 3w.visible=0; smallmap1.visible=0; smallmap2.visible=0; smallmap3.visible=1 " />
+
+<spot id="x" url="/admin/uploads/vtour/x.png" visible="0" static="1" staticX="-179.00" staticY="-179.00" depth="85" scale="1.10" onover="x.glow=6; x.glowColor=#FF3300" onout="x.glow=0" onclick="map1.visible=0; map2.visible=0; map3.visible=0;pin1.visible=0; pin2.visible=0; pin3.visible=0; pin4.visible=0; pin5.visible=0; pin6.visible=0; pin7.visible=0; pin8.visible=0; pin9.visible=0; pin10.visible=0;  pin11.visible=0;  pin12.visible=0;  pin13.visible=0;  pin14.visible=0; x.visible=0; pano.blur=0,500" />
+ 
+ 
+<spot id="smallmap1" url="/admin/uploads/vtour/1.png" static="1" staticX="110.00" staticY="70.00" salign="LT" depth="1" scale="0.34" onover="smallmap1.glow=2; smallmap1.glowColor=#FF3300" onout="smallmap1.glow=0" onclick="map1.visible=1; pin1.visible=1; pin2.visible=1; pin3.visible=1; pin4.visible=1; pin5.visible=1; pin6.visible=1; pin7.visible=1; pin8.visible=1; pin9.visible=1;x.visible=1; pano.blur=11,500; pin10.visible=0;  pin11.visible=0;  pin12.visible=0;  pin13.visible=0;  pin14.visible=0; map2.visible=0"/>
+ 
+<spot id="smallmap2" visible="0" url="/admin/uploads/vtour/2.png" static="1" staticX="110.00" staticY="70.00" salign="LT" depth="1" scale="0.34" onover="smallmap2.glow=2; smallmap2.glowColor=#FF3300" onout="smallmap2.glow=0" onclick="map2.visible=1; x.visible=1; pin10.visible=1; pin11.visible=1; pin12.visible=1; pin13.visible=1; pano.blur=11,500; map1.visible=0; pin1.visible=0; pin2.visible=0; pin3.visible=0; pin4.visible=0; pin5.visible=0; pin6.visible=0; pin7.visible=0; pin8.visible=0; pin9.visible=0; pin14.visible=0; "/>
+
+<spot id="smallmap3" visible="0" url="/admin/uploads/vtour/3.png" static="1" staticX="110.00" staticY="70.00" salign="LT" depth="1" scale="0.34" onover="smallmap3.glow=2; smallmap3.glowColor=#FF3300" onout="smallmap3.glow=0" onclick="map3.visible=1; pin14.visible=1; x.visible=1;  pano.blur=11,500; map1.visible=0; pin1.visible=0; pin2.visible=0; pin3.visible=0; pin4.visible=0; pin5.visible=0; pin6.visible=0; pin7.visible=0; pin8.visible=0; pin9.visible=0; pin10.visible=0;  pin11.visible=0;  pin12.visible=0;  pin13.visible=0; map2.visible=0 "/>
+
+<spot id="map1" url="/admin/uploads/vtour/1.png" visible="0" static="1" depth="67"  scale="0.94"/>
+
+<spot id="pin2" url="/admin/uploads/vtour/pin.png" visible="0" static="1" staticX="33.00" staticY="143.00" depth="68" onover="pin2.glow=2; pin2.glowColor=#FF3300; pin2.glowBlur=8" onout="pin2.glow=0" onclick="limitslow;loadpano(panoName=/admin/uploads/vtour/out2/out2)"/>
+
+<spot id="pin1" url="/admin/uploads/vtour/pin.png" visible="0" static="1" staticX="117.00" staticY="112.00" depth="68" onover="pin1.glow=2; pin1.glowColor=#FF3300;  pin1.glowBlur=8" onout="pin1.glow=0" onclick="limitslow;loadpano(panoName=/admin/uploads/vtour/out/out)"/>
+
+<spot id="pin3" url="/admin/uploads/vtour/pin.png" visible="0" static="1" staticX="40.00" staticY="2.00" depth="68" onover="pin3.glow=2; pin3.glowColor=#FF3300;  pin3.glowBlur=8" onout="pin3.glow=0" onclick="limitslow;loadpano(panoName=/admin/uploads/vtour/living/living)"/>
+
+<spot id="pin4" url="/admin/uploads/vtour/pin.png" visible="0" static="1" staticX="46.00" staticY="-91.00" depth="68" onover="pin4.glow=2; pin4.glowColor=#FF3300;  pin4.glowBlur=8" onout="pin4.glow=0" onclick="limitslow;loadpano(panoName=/admin/uploads/vtour/kitchen/kitchen)"/>
+
+<spot id="pin5" url="/admin/uploads/vtour/pin.png" visible="0" static="1" staticX="-66.00" staticY="104.00" depth="68" onover="pin5.glow=2;pin5.glowColor=#FF3300;  pin5.glowBlur=8" onout="pin5.glow=0" onclick="limitslow;loadpano(panoName=/admin/uploads/vtour/hall/hall1)"/>
+
+ id="pin6" url="/admin/uploads/vtour/pin.png" visible="0" static="1" staticX="-143.00" staticY="90.00" depth="68" onover="pin6.glow=2;pin6.glowColor=#FF3300;  pin6.glowBlur=8" onout="pin6.glow=0" onclick="loadpano(panoName=/admin/uploads/vtour/banqdolu1a/banqdolu1a)"/>
+
+id="pin7" url="/admin/uploads/vtour/pin.png" visible="0" static="1" staticX="221.00" staticY="-160.00" depth="68" onover="pin7.glow=2;pin7.glowColor=#FF3300;  pin7.glowBlur=8" onout="pin7.glow=0" onclick="loadpano(panoName=/admin/uploads/vtour/besedka/besedka)"/>
+
+id="pin8" url="/admin/uploads/vtour/pin.png" visible="0" static="1" staticX="222.00" staticY="166.00" depth="68" onover="pin8.glow=2; pin8.glowColor=#FF3300; pin8.glowBlur=8" onout="pin8.glow=0" onclick="loadpano(panoName=/admin/uploads/vtour/basein/basein)"/>
+
+ id="pin9" url="/admin/uploads/vtour/pin.png" visible="0" static="1" staticX="-215.00" staticY="171.00" depth="68" onover="pin9.glow=2; pin9.glowColor=#FF3300; pin9.glowBlur=8" onout="pin9.glow=0" onclick="loadpano(panoName=/admin/uploads/vtour/parking/parking)"/> 
+
+//map2 - second floor
+
+<spot id="map2" url="/admin/uploads/vtour/2.png" visible="0" static="1" depth="67" scale="0.94"/>
+
+<spot id="pin10" url="/admin/uploads/vtour/pin.png" visible="0" static="1" staticX="106.00" staticY="27.00" depth="68" onover="pin10.glow=2;pin10.glowColor=#FF3300;  pin10.glowBlur=8" onout="pin10.glow=0" onclick="limitslow;loadpano(panoName=/admin/uploads/vtour/terasa/terasa)"/>
+
+<spot id="pin11" url="/admin/uploads/vtour/pin.png" visible="0" static="1" staticX="-62.00" staticY="-56.00" depth="68" onover="pin11.glow=2;pin11.glowColor=#FF3300;  pin11.glowBlur=8" onout="pin11.glow=0" onclick="limitslow;loadpano(panoName=/admin/uploads/vtour/hallup/hallup1)"/>
+
+<spot id="pin12" url="/admin/uploads/vtour/pin.png" visible="0" static="1" staticX="-69.00" staticY="19.00" depth="68" onover="pin12.glow=2;pin12.glowColor=#FF3300;  pin12.glowBlur=8" onout="pin12.glow=0" onclick="limitslow;loadpano(panoName=/admin/uploads/vtour/stuni/stuni1)"/>
+
+<spot id="pin13" url="/admin/uploads/vtour/pin.png" visible="0" static="1" staticX="26.00" staticY="19.00" depth="68" onover="pin13.glow=2;pin13.glowColor=#FF3300;  pin13.glowBlur=8" onout="pin13.glow=0" onclick="limitslow;loadpano(panoName=/admin/uploads/vtour/rado/rado)"/>
+
+//map3 - 3d floor
+<spot id="map3" url="/admin/uploads/vtour/3.png" visible="0" static="1" depth="67"  scale="0.94"/>
+
+<spot id="pin14" url="/admin/uploads/vtour/pin.png" visible="0" static="1" staticX="115.00" staticY="78.00" depth="168" onover="pin14.glow=2;pin14.glowColor=#FF3300;  pin14.glowBlur=8" onout="pin14.glow=0" onclick="limitshigh;loadpano(panoName=/admin/uploads/vtour/panopokriv/panopokriv)"/>
+
+<spot id="logovw" url="/admin/uploads/vtour/vworx.png" static="1" staticX="-87.00" staticY="-18.00" salign="RB" depth="84" onclick="openUrl(http://vworx.biz, _blank )"/>
+
+</global>
+    </hotspots>
+</panorama>
+
