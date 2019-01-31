@@ -1,0 +1,31 @@
+<script type="text/javascript">
+  //<![CDATA[
+  $('slideshow').makePositioned();
+  $A([
+    '/images/header/1.jpg',
+    '/images/header/2.jpg',
+    '/images/header/3.jpg',
+    '/images/header/4.jpg',
+    '/images/header/5.jpg',
+  ]).each(function(img) {
+    $('slideshow').insert('<div style="position: absolute; top: 0px; left: 0px; display: none;"><img src="'+img+'" alt="" /></div>')
+  });
+  $$('#slideshow div').first().appear({duration:2});
+  new PeriodicalExecuter(
+    function(){
+      $$('#slideshow div').each(function(slide){
+        if(slide.visible()){
+          slide.fade({duration:2});
+          if(slide.next()){
+            slide.next().appear({duration:2});
+          }else if(slide.previousSiblings()){
+            $('slideshow').down().appear({duration:2});
+          }
+          throw $break;
+        }
+      });
+    },
+    4
+  );
+  //]]>
+</script>

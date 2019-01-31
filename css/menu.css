@@ -1,0 +1,142 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls.com/menu/skeleton.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+#nav,#nav ul {
+  font-size: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+#nav {
+  height: 25px;
+}
+
+#nav ul {
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;  
+}
+
+#nav li {
+  background: #71a4ea url(../images/menu_right.gif) top right no-repeat;
+  float: left;
+}
+
+#nav li li {
+  background: #71a4ea;
+  border-bottom: 1px solid #fff;
+  float: none;
+}
+
+/* a hack for IE5.x and IE6 */
+* html #nav li li {
+  float: left;
+}
+
+#nav li a {
+  background: url(../images/menu_left.gif) top left no-repeat;
+  color: #fff;
+  display: block;
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  margin: 0 25px 0 0;
+  padding: 0 0 0 10px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#nav li li a {
+  background: none;
+  float: none;
+  font-size: 18px;
+  height: 25px;
+  line-height: 25px;
+  margin: 0;
+  padding: 0 9px 0 9px;
+}
+
+#nav li:hover {
+  position: relative;
+  z-index: 3;
+}
+
+#nav li:hover ul {
+  left: -1px;
+  top: 25px;
+}
+
+/* another hack for IE5.5 and IE6 */
+* html #nav li:hover ul {
+  left: 10px;
+}
+
+#nav ul {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
+/* yet another hack for IE5.x and IE6 */
+* html #nav ul {
+  width: 1px;
+}
+
+/* it could have been this simple if all browsers understood */
+  /* show next level */
+#nav li:hover li:hover>ul {
+  left: 0px;
+  margin-left: 100%;
+  top: -1px;
+}
+
+/* keep further levels hidden */
+#nav li:hover>ul ul {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: auto;
+}
+
+/* show path followed */
+#nav li:hover>a {
+  color: #dae7f8;
+}
+
+/* but IE5.x and IE6 need this lot to style the flyouts and path followed */
+  /* show next level */
+#nav li:hover li:hover ul,#nav li:hover li:hover li:hover ul,#nav li:hover li:hover li:hover li:hover ul,#nav li:hover li:hover li:hover li:hover li:hover ul
+  {
+  left: 0px;
+  margin-left: 100%;
+  top: -1px;
+}
+
+/* keep further levels hidden */
+#nav li:hover ul ul,#nav li:hover li:hover ul ul,#nav li:hover li:hover li:hover ul ul,#nav li:hover li:hover li:hover li:hover ul ul
+  {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
+/* show path followed */
+#nav li:hover a,#nav li:hover li:hover a,#nav li:hover li:hover li:hover a,#nav li:hover li:hover li:hover li:hover a,#nav li:hover li:hover li:hover li:hover li:hover a,#nav li:hover li:hover li:hover li:hover li:hover li:hover a
+  {
+  color: #dbdbdb;
+}
+
+/* hide futher possible paths */
+#nav li:hover li a,#nav li:hover li:hover li a,#nav li:hover li:hover li:hover li a,#nav li:hover li:hover li:hover li:hover li a,#nav li:hover li:hover li:hover li:hover li:hover li a
+  {
+  color: #fff;
+}

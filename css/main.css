@@ -1,0 +1,161 @@
+h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {
+  margin: 0;
+  padding: 0;
+}  /*  */
+a {
+  outline: none;
+}
+
+a img,:link img,:visited img {
+  border: none;
+}
+
+html,body {
+  background-color: #fff;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+}
+
+.clear {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+#wrapper {
+  margin: 10px auto;
+  width: 980px;
+}
+
+#slogan {
+  font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+}
+
+#lang {
+  color: #888;
+  font-size: 14px;
+  margin-right: 25px;
+  text-align: right;
+}
+
+#lang a {
+  color: #888;
+  font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+#lang a.active,#lang a:hover {
+  text-decoration: underline;
+}
+
+#nav {
+  font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+}
+
+#header {
+  margin-left: 10px;
+}
+
+#innerheader {
+  background: url(../images/header.gif) top left no-repeat;
+  height: 208px;
+}
+
+#slideshow {
+  float: left;
+  height: 173px;
+  width: 614px;
+}
+
+#homepage {
+  float: left;
+  margin-left: 15px;
+}
+
+#body {
+  margin: 0 10px 0 10px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #71a4ea;
+}
+
+.title {
+  font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+  float: left;
+}
+
+.date {
+  color: #888;
+  font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+  font-size: 11px;
+  float: right;
+  margin-left: 20px;
+}
+
+.error {
+  color: #ff3333;
+  padding: 10px;
+  text-align: center;
+}
+
+.notice {
+  color: #73b65a;
+  padding: 10px;
+  text-align: center;
+}
+
+#body img {
+  border: 1px solid #888;
+  padding: 2px;
+  margin: 5px 4px 0 0;
+}
+
+#body img:hover {
+  border: 1px solid #71a4ea;
+}
+
+label {
+  color: #888;
+}
+
+.form_row {
+  margin-top: 10px
+}
+
+.form_error {
+  color: #ff3333;
+  display: inline;
+}
+
+form img {
+  vertical-align: middle;
+}
+
+#message_copy {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#footer {
+  color: #888;
+  font-size: 11px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#footer a {
+  color: #888;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
