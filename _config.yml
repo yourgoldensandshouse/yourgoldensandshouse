@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title:
-email:
+email: sale@yourgoldensandshouse.com
 description: >-
   Рзгледайте галерията със снимки на къщата и панорамата към Черно море.
   Ще видите част от интериора на къщата, двора и изгледа от терасите.
