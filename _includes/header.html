@@ -17,12 +17,24 @@
   <div id="lang">
     <a href="/bg">Български</a> | <a class="active" href="/en">English</a> | <a href="/de">Deutsch</a> |  <a href="/ru">Русский</a>
   </div>
-  <ul id="nav"><li><a class="selected" href="/en">About the house</a></li>
+  <ul id="nav"><li><a href="/en">About the house</a></li>
     <li><a href="/en/description-and-allocation-of-the-house-being-sold">Description</a></li>
     <li><a href="/en/virtual-tour-of-the-house-and-the-panorama">Virtual tour</a></li>
     <li><a href="/en/gallery">Gallery</a></li>
     <li><a href="/en/map">Map</a></li>
     <li><a href="/en/contact-us">Contacts </a></li>
+  </ul>
+  {% else if page.lang == "de" %}
+  <h1 id="slogan">Wir verkaufen das Haus, in dem Sie in aller Ruhe die Schönheit vom bulgarischen Meer und Wald genießen können!</h1>
+  <div id="lang">
+    <a href="/bg">Български</a> | <a href="/en">English</a> | <a class="active" href="/de">Deutsch</a> | <a href="/ru">Русский</a>
+  </div>
+  <ul id="nav"><li><a href="/de">Das Hаus</a></li>
+    <li><a href="/de/beschreibung">Beschreibung</a></li>
+    <li><a href="/de/virtueller-rundgang">Virtueller Rundgang</a></li>
+    <li><a href="/de/fotogalerie">Galerie</a></li>
+    <li><a href="/de/karte">Karte</a></li>
+    <li><a href="/de/kontakte">Kontakte</a></li>
   </ul>
   {% endif %}
   <div id="innerheader">
