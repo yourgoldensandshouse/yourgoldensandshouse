@@ -1,7 +1,7 @@
 <div id="header">
   {% if page.lang == "bg" %}
   <h1 id="slogan">Продава се къщата, където ще откриете спокойствието и ще се наслаждавате на красотата на море и гора!</h1>
-  {%- include lang.html -%}
+  {% include lang.html %}
   <ul id="nav">
     <li><a href="/bg">За къщата</a></li>
     <li><a href="/bg/описание-на-къщата">Описание</a></li>
@@ -12,7 +12,7 @@
   </ul>
   {% elsif page.lang == "en" %}
   <h1 id="slogan">We are selling the house, where you can find peace and enjoy the beauty of both Bulgarian Black Sea and forest!</h1>
-  {%- include lang.html -%}
+  {% include lang.html %}
   <ul id="nav"><li><a href="/en">About the house</a></li>
     <li><a href="/en/description-and-allocation-of-the-house-being-sold">Description</a></li>
     <li><a href="/en/virtual-tour-of-the-house-and-the-panorama">Virtual tour</a></li>
@@ -22,7 +22,7 @@
   </ul>
   {% elsif page.lang == "de" %}
   <h1 id="slogan">Wir verkaufen das Haus, in dem Sie in aller Ruhe die Schönheit vom bulgarischen Meer und Wald genießen können!</h1>
-  {%- include lang.html -%}
+  {% include lang.html %}
   <ul id="nav"><li><a href="/de">Das Hаus</a></li>
     <li><a href="/de/beschreibung">Beschreibung</a></li>
     <li><a href="/de/virtueller-rundgang">Virtueller Rundgang</a></li>
@@ -32,7 +32,7 @@
   </ul>
   {% elsif page.lang == "ru" %}
   <h1 id="slogan">Продается Дом, где вы можете найти спокойствия, тишину и насладиться красотой болгарского Черного моря и леса!</h1>
-  {%- include lang.html -%}
+  {% include lang.html %}
   <ul id="nav"><li><a class="selected" href="/ru">Дом</a></li>
     <li><a href="/ru/описание-дома">Описание </a></li>
     <li><a href="/ru/виртуальный-тур">Виртуальный тур</a></li>
