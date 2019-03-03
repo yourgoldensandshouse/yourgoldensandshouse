@@ -6,7 +6,7 @@ permalink: /en/virtual-tour-of-the-house-and-the-panorama
 ---
 <h1 class="title">{{ page.title }}</h1>
 <div class="clear"></div>
-<p>If you like to view the virtual tour on your computer you can download it from <a title="Свалете виртуалният тур на къщата от тук" href="/static/vtour/vworx.exe">here</a>.</p>
+<p>If you like to view the virtual tour on your computer you can download it from <a title="Свалете виртуалният тур на къщата от тук" href="https://github.com/yourgoldensandshouse/yourgoldensandshouse/releases/download/v1.0.0/www.YourGoldenSandsHouse.com-virtual-tour.exe">here</a>.</p>
 <p>&nbsp;</p>
 <div id="vtour"><p><span style="color: #ff0000;">In order to see the virtual tour you need Flash Player and tour JavaScript has to be enabled</span></p></div>
 <p>&nbsp;</p>

@@ -6,7 +6,7 @@ permalink: /de/virtueller-rundgang
 ---
 <h1 class="title">{{ page.title }}</h1>
 <div class="clear"></div>
-<p>Wenn Sie den Virtuelle Rundgang auf Ihrem PC anschauen möchten, könnten Sie ihn <a href="/static/vtour/vworx.exe">hier</a> herunterlagen.</p>
+<p>Wenn Sie den Virtuelle Rundgang auf Ihrem PC anschauen möchten, könnten Sie ihn <a href="https://github.com/yourgoldensandshouse/yourgoldensandshouse/releases/download/v1.0.0/www.YourGoldenSandsHouse.com-virtual-tour.exe">hier</a> herunterlagen.</p>
 <p>&nbsp;</p>
 <div id="vtour"><p><span style="color: #ff0000;">Um den Virtuellen Rundgang anzushauen, brauchen Sie Flash Player und JavaScript</span></p></div>
 <p>&nbsp;</p>
